@@ -14,15 +14,6 @@ class File(object):
     def close(self):
         return self.stream.close()
 
-@app.route('/')
-def hello():
-    return render_template('comingsoon.html')
-
-@app.route('/testing')
-def test():
-    return render_template('index.html')
-
-
 @app.route('/c')
 def contact():
     return render_template('contact.html')
