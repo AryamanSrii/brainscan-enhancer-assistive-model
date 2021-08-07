@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="{{ url_for('static',filename='css/app.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='img/favicon.svg') }}" rel="icon">
+
+  <title>
+    BEAM
+  </title>
+</head>
+<body style = "background-color : #242424">
+    <center><h1 style="color: #ffc872;font-size:70px;font-family:gabrielle">BrainScan Enhancer Assistive Model</h1><hr>
+
+  {% if error %}
+    <h3>Error!</h3>
+    <p>{{ error }}</p>
+  {% endif %}
+
+  <center><h1 style="color:#ffc872;font-size:50px;font-family:inter;">Upload your file!</h1>
+  <form class = "p-3 text-center"method="POST" enctype="multipart/form-data">
+   <center> <input class = "form-control"type="file" name="files" multiple> </center><br><br>
+    <button class = "button b2" type="submit">Upload</button>
+  </form>
+
+<br><br>
+  <center><h1 style="color:#ffc872;font-size:20px;font-family:roboto;">Try a sample!</h1> <br>
+  <form method="POST" enctype="multipart/form-data">
+    <input style = "border-radius: 2px;" type="checkbox" value="1" name="Y1" id="Y1">
+    <label style="color:#ffc872;font-size:20px;font-family:roboto;" for="Y1"> Sample 1 </label>
+    <input type="checkbox" value="2" name="Y2" id="Y2">
+    <label style="color:#ffc872;font-size:20px;font-family:roboto;" for="Y2"> Sample 2 </label>
+    <input type="checkbox" value="3" name="Y3" id="Y3">
+    <label style="color:#ffc872;font-size:20px;font-family:roboto;" for="Y3"> Sample 3 </label>
+    <input type="checkbox" value="4" name="Y4" id="Y4">
+    <label style="color:#ffc872;font-size:20px;font-family:roboto;" for="Y4"> Sample 4 </label> <br><br>
+    <input type="checkbox" value="6" name="Y6" id="Y6">
+    <label style="color:#ffc872;font-size:20px;font-family:roboto;" for="Y6"> Sample 5 </label>
+    <input type="checkbox" value="7" name="Y7" id="Y7">
+    <label style="color:#ffc872;font-size:20px;font-family:roboto;" for="Y7"> Sample 6 </label>
+    <input type="checkbox" value="8" name="Y8" id="Y8">
+    <label style="color:#ffc872;font-size:20px;font-family:roboto;" for="Y8"> Sample 7 </label><br><br>
+    <input type="checkbox" value="9" name="Y9" id="Y9"> 
+    <label style="color:#ffc872;font-size:20px;font-family:roboto;" for="Y9"> Sample 8 </label>
+    <input type="checkbox" value="30" name="Y30" id="Y30"> 
+    <label style="color:#ffc872;font-size:20px;font-family:roboto;" for="Y30"> Sample 9 </label><br><br>
+    <input type="checkbox" value="31" name="Y31" id="Y31"> 
+    <label style="color:#ffc872;font-size:20px;font-family:roboto;" for="Y31"> Sample 10 </label><br><br>
+
+<button class = "button b1" type="submit">Upload Sample</button> </center>
+  </form>
+
+  <center><h1>Results</h1></center>
+  {% if results %}
+    {% if results['data']|length > 1 %}
+	<h3>Files are placed in the same order which you selected them</h3>
+	<p>If you chose the samples then it will be in numerical order.</p>
+    {% endif %}
+
+    {% for file in results['files'] %}
+     <center> <img src="data:image/png;base64, {{ results['files'][file] }}" alt="Brain Scan" />
+    {% endfor %} </center>
+
+  {% else %}
+    <h4>You have not yet submitted any images</h4>
+  {% endif %}
+
+</a>
+</body>
+</html>

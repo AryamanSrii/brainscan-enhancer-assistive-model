@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title> BEAM </title>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="BEAM | Brainscan Enhancer Assitive Model |BEAM is a Project by a High School Student Aryaman Srivastava. BrainScan  enhancer assistive model is aimed to aid doctors in detecting brain tumor or any foreign objects in brain!">
+	<meta name="keywords" content="Sofware,Developer,Engineer,Grad,New-grad,Software Developer,Software Engineer,Frontend,Backend,full-stack, Writer, Blogger, Researcher, AI, Ml, artificial intelligence, machine learning, deep learning, neural networks">
+  <link rel="icon" href="image_2021-06-21_082005.png">
+
+
+  <link rel="shortcut icon" href="{{ url_for('static',filename='img/favicon.svg') }}">
+  <link href="{{ url_for('static',filename='css/cs.css') }}" rel="stylesheet">
+<SCRIPT language=JavaScript>
+var message = "Right Click Function is Currently Disabled, Contact the Developer if something is wrong. Thank you!";
+
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+
+document.onmousedown = rtclickcheck;
+</SCRIPT>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>BEAM</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:50px"></p>
+    <center><button class = "button cs " onclick="document.location='/app'"> Become a Tester</button></center>
+
+  </div>
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("September 2, 2021 20:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</body>
+</html>

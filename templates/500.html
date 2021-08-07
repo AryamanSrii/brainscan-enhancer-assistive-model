@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>500 Error</title>
+    <link href="{{ url_for('static',filename='img/favicon.svg') }}" rel="icon">
+
+  <style type="text/css">
+    html {
+        font-size: 62.5%;
+    }
+    body {
+        background-color: #fff;
+        color: #000;
+        font-family: helvetica, arial, sans-serif;
+        font-size: 1.4em;
+        line-height: 1.5;
+    }
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .emoji {
+      font-size: 9em;
+      text-align: center;
+    }
+    .title {
+      font-size: 3em;
+      text-align: center;
+      line-height: 0em;
+      color: grey;
+    }
+    .text {
+      text-align: center;
+    }
+    }
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+  opacity: 0.6;
+  font-family: sans-serif;
+}
+
+.b2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ff7300;
+}
+
+.b2:hover {
+  background-color: #ff7300;
+  color: white;
+  opacity: 1;
+
+}
+  </style>
+</head>
+<body class="centered">
+  <p class="title">Ooooops!</p>
+  <p class="text">Something went wrong 🙀<br>Please check the docs to prevent this from happening ever again</p>
+  <center><a href="/">Back to Home</a></center>
+</body>
+</html>

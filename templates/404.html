@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>Page Not Found</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="{{ url_for('static',filename='img/favicon.svg') }}" rel="icon">
+
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: ('{{ url_for('static',filename='img/404.gif') }}');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+  opacity: 0.6;
+  font-family: sans-serif;
+}
+
+.b2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ff7300;
+}
+
+.b2:hover {
+  background-color: #ff7300;
+  color: white;
+  opacity: 1;
+
+}
+
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Page not Found</h1>
+    <center><button class = "button b2"  onclick="document.location='/'">Back to Home</button>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+  </div>
+
+  </div>
+</div>
+
+</body>
+</html>
