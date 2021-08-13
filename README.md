@@ -1,61 +1,105 @@
 
-# **B**rain scan **E**nhancer **A**ssitive **M**odel
+# BEAM: BrainScan Enhancer Assistive Model
 
-HOW WILL THE PROGRAM BE CREATED?
+## About BEAM
 
-The program will detect and mark the tumor directly from the brain scans using Python, Machine Learning, OpenCV, and Numpy.  The Program Can be Found Here ([Click here](main.ipynb))
-
-
-
-WHAT ARE ITS ADVANTAGES?
-
-As discussed above, The application utilizes Magnetic Resonance Imaging (MRI) brain scans to automatically detect the majority of tumors. Also, those that go undetected and lead to the patient's uncertain demise.
-
-HOW DOES IT WORK?
-
-The program accepts the brain scan from one end and sends the enhanced brain scan with tumor visible, which will make it easier for the doctor to plan the course of action.
+BrainScan  enhancer assistive model aimed to aid doctors in detecting brain tumor or any foreign objects in brain!
+The main notion of the program I built was to help as many people as it can, who are currently fighting for their lives, due to late detection of their illness. 
+“A tumor can grow in the brain and go relatively unnoticed for a great period of time,” says Dr. Dunbar. 
+When symptoms do arise, they are often very generalized and most likely  be caused by other conditions. Many areas don’t advanced enough MRI or CT-SCANS and their tumor goes undetected for years and may result in the death of the patient. 
+This is why I created this program. My goal is to make tumor detection more efficient and effective with the right technology. I want to provide the best possible options that will help everyone. 
+This innovation of brain tumor detection has been possible due to the enhancement of technologies like Artificial Intelligence and Machine Learning. 
+AI and ML are the technologies which if used properly can be used to change the world. They are nothing less than a blessing and a weapon to reform this world. With proper knowledge as well as tools, we can put these technologies to great use for better living. 
+These technologies are those promising technologies that will change how we detect brain tumors. 
+The idea of creating a program to detect brain tumors came from statistics that showed it’s causing more than 10000 deaths yearly and I hope that my method might create change by early detection and save many lives which are at risk.
 
 
-WHY THIS?
+## Developers
 
-This program is easy to run which means any medical specialist can use it at their convenience anytime anywhere.
-It will help thousands of people all over the world by bringing reform in the history of Medicines.
-
-
-HOW SOON CAN IT BE BROUGHT INTO PLAY?
-
-The software must be accessible and convenient to use for all, this further concludes that  the only challenge will be to integrate it with MRI run efficiently; once resolved, it will be up and running in no time. Before it is used for professional reasons, it should also be assessed with certain real-life scenarios.
-
-
-## Authors
-
-- [@Aryaman Srivastava](https://www.twitter.com/AryamanSri03)
-
-  
-## Badges
-
-
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+- [Aryaman Srivastava](https://www.github.com/AryamanSrii)
 
   
 ## Demo
 
-Demo Link coming soon
-  
+here goes the demo
+
+
 ## Deployment
 
-To deploy this project run
+#### To Deploy this Project run
+
+```bash
+  python app.py
 ```
---> fork the repository
---> run app.py
---> go to /app to access the program
-```
+
   
+## Badges
+
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+
+  
+## FAQ
+
+#### How is Data Managed?
+
+The Data uploaded is saved as a temprorary file in the server while you are on the site, and gets deleted instantly when you leave the side or close the app.
+
+#### Is the Patient Data Safe?
+
+We respect the privacy of the patient data and to keep the data save we use the python module ```stream``` which stores the upload the file as a .temp files and as mentioned is deleted instantly
+
+#### When will it be avaible?
+
+The Deployment of the application is in full progress. The backend which control the application is done and work on designing a easy but attractive UI has started
+
+#### Whom is it for?
+
+The idea of creating a program to detect brain tumors came from statistics that showed it’s causing more than 10000 deaths yearly and I hope that my method might create change by early detection and save many lives which are at risk.
+
+## Features
+
+- Easy UI
+- Fast Processing
+- Cross platform
+- Documentation (Coming Soon)
+
+  
+## 🚀 About Me
+Aryaman Srivastava is an inquisitive, young lad, with a deep passion for keeping up with the latest trends in tech. Being only 14 years, he doesn't let his age stop him or quit; instead, he uses it to his advantage, making use of the extra time he has to explore as well as study programming along with other hot topics in the field of computer science. He is particularly passionate about AI, and follows the latest developments in the field.
+  
+## 🔗 Links
+[![Official Website](https://img.shields.io/badge/website-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://beamai.ml/)
+[![Application Link](https://img.shields.io/badge/Testing-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://beam.aryamansri.repl.co/app)
+[![Github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AryamanSrii)
+
+  
+## Installation
+
+Install the Zip File and extract it
+```bash
+cd <foldername>
+cd BEAM
+cd app.py
+```
+
+![Logo](https://media.discordapp.net/attachments/869417962824687630/875603642659512390/image0-removebg-preview.png?width=300&height=250)
+
+    
 ## Screenshots
 
-![App Screenshot](https://cdn.discordapp.com/attachments/863802987851939840/873560622590226442/unknown.png)
-![App Screenshot2](https://cdn.discordapp.com/attachments/863802987851939840/873560823187001455/unknown.png)
-  
-## Documentation
+![App Screenshot](https://media.discordapp.net/attachments/863802987851939840/873560622590226442/unknown.png?width=1348&height=681)
+![App Screenshot](https://media.discordapp.net/attachments/863802987851939840/873560823187001455/unknown.png?width=1350&height=681)
 
-[Documentation](https://pdfhost.io/v/IkaQ8WJs1_BrainTumorDetection_CSIRpdf.pdf)
+
+  
+## Support
+
+For support, email aryamansrivastava2006@gmail.com or [Message us here](https://beam.aryamansri.repl.co/c)
+
+  
+## Tech Stack
+
+**Languages Used**: Python, Flask, Image Segmentation, bytes io, stea,
+
+
+  
