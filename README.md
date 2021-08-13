@@ -1,4 +1,5 @@
 
+
 # BEAM: BrainScan Enhancer Assistive Model
 
 ## About BEAM
@@ -21,7 +22,7 @@ The idea of creating a program to detect brain tumors came from statistics that 
   
 ## Demo
 
-here goes the demo
+https://user-images.githubusercontent.com/68835688/129307358-286672b2-c95d-4116-9735-ed3b18d05137.mp4
 
 
 ## Deployment
