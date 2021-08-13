@@ -99,7 +99,7 @@ For support, email aryamansrivastava2006@gmail.com or [Message us here](https://
   
 ## Tech Stack
 
-**Languages Used**: Python, Flask, Image Segmentation, bytes io, stea,
+**Languages Used**: Python, Flask, Image Segmentation, bytes io, stream.
 
 
   
