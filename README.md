@@ -80,7 +80,7 @@ Install the Zip File and extract it
 ```bash
 cd <foldername>
 cd BEAM
-cd app.py
+python app.py
 ```
 
 ![Logo](https://media.discordapp.net/attachments/869417962824687630/875603642659512390/image0-removebg-preview.png?width=300&height=250)
